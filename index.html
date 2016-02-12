@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja Pop</title>
+    <link rel="stylesheet" type="text/css" href="assets/canvas.css">
+  </head>
+  <body>
+    <div id="canvas-wrap">
+      <canvas id="canvas-game"></canvas>
+      <div id="welcome-screen">
+        <div id="character-choice-text">Choose Your Character!</div>
+        <table id="character-table">
+          <tr>
+<<<<<<< HEAD
+            <td class="character-link" value=0 ><img class="ninja-black" src="assets/images/sprites/ninja/ninja-black-icon.png"/></td>
+            <td class="character-link" value=1 ><img class="ninja-grey" src="assets/images/sprites/ninja/ninja-red-icon.png"/></td>
+            <td class="character-link" value=2 ><img class="ninja-red" src="assets/images/sprites/ninja/ninja-grey-icon.png"/></td>
+          </tr>
+=======
+            <td class="character-link"><img class="ninja-black" src="assets/images/sprites/ninja/ninja-black-icon.png"/></td>
+            <td class="character-link"><img class="ninja-grey" src="assets/images/sprites/ninja/ninja-red-icon.png"/></td>
+            <td class="character-link"><img class="ninja-red" src="assets/images/sprites/ninja/ninja-grey-icon.png"/></td>
+          </tr>
+          <!-- <tr>
+            <td class="character-link">Kirby</td>
+            <td class="character-link">Megaman</td>
+            <td class="character-link">Yoshi</td>
+          </tr> -->
+>>>>>>> master
+        </table>
+        <div class="display-character"></div>
+        <div id="start-game-outer">
+          <div id="start-game">Start!</div>
+        </div>
+      </div>
+      <div id="center-message"></div>
+    </div>
+
+    <script type="application/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="application/javascript" src="lib/bubble.js"></script>
+    <script type="application/javascript" src="lib/attack.js"></script>
+    <script type="application/javascript" src="lib/pop.js"></script>
+    <script type="application/javascript" src="lib/footer.js"></script>
+    <script type="application/javascript" src="lib/ninja.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+
+    <script type="application/javascript">
+      (function () {
+        // $("#center-message").hide();
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        canvasEl.width = NinjaPop.Game.DIM_X;
+        canvasEl.height = NinjaPop.Game.DIM_Y;
+
+        var ctx = canvasEl.getContext("2d");
+        var game = new NinjaPop.Game(2, ctx);
+        $(document).ready(function () {
+<<<<<<< HEAD
+          $(".character-link").on("click",function (e) {
+            debugger
+            $(".character-link").removeClass("selected");
+            $(e.currentTarget).addClass("selected");
+          });
+
+=======
+>>>>>>> master
+          $("#start-game").click(function () {
+            $('#welcome-screen').hide();
+            var gameView = new NinjaPop.GameView(game, ctx).start();
+          });
+        })
+      })();
+    </script>
+
+  </body>
+</html>
