@@ -49,6 +49,7 @@
             $(".character-link").removeClass("selected");
             $(e.currentTarget).addClass("selected");
           });
+          
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var gameView = new NinjaPop.GameView(game, ctx).start();
