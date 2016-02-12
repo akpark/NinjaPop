@@ -116,9 +116,10 @@
   text-align: center;
   margin: auto auto;
   z-index: 2;
-  opacity: 0.7;
-  font-size: 18px;
-  background: green;
+  opacity: 1;
+  font-size: 24px;
+  font-family: rockwell;
+  background: #e6e6e6;
 }
 
 #footer {
