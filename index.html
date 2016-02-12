@@ -42,17 +42,17 @@
         canvasEl.height = NinjaPop.Game.DIM_Y;
 
         var ctx = canvasEl.getContext("2d");
-        var game = new NinjaPop.Game(2, ctx);
+        var game = new NinjaPop.Game(1, ctx);
         $(document).ready(function () {
           $(".character-link").on("click",function (e) {
             debugger
             $(".character-link").removeClass("selected");
             $(e.currentTarget).addClass("selected");
           });
-          
+
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
-            var gameView = new NinjaPop.GameView(game, ctx).start();
+            new NinjaPop.GameView(game, ctx).start();
           });
         })
       })();
