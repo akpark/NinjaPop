@@ -12,22 +12,10 @@
         <div id="character-choice-text">Choose Your Character!</div>
         <table id="character-table">
           <tr>
-<!-- <<<<<<< HEAD -->
             <td class="character-link" value=0 ><img class="ninja-black" src="assets/images/sprites/ninja/ninja-black-icon.png"/></td>
             <td class="character-link" value=1 ><img class="ninja-grey" src="assets/images/sprites/ninja/ninja-red-icon.png"/></td>
             <td class="character-link" value=2 ><img class="ninja-red" src="assets/images/sprites/ninja/ninja-grey-icon.png"/></td>
           </tr>
-<!-- =======
-            <td class="character-link"><img class="ninja-black" src="assets/images/sprites/ninja/ninja-black-icon.png"/></td>
-            <td class="character-link"><img class="ninja-grey" src="assets/images/sprites/ninja/ninja-red-icon.png"/></td>
-            <td class="character-link"><img class="ninja-red" src="assets/images/sprites/ninja/ninja-grey-icon.png"/></td>
-          </tr> -->
-          <!-- <tr>
-            <td class="character-link">Kirby</td>
-            <td class="character-link">Megaman</td>
-            <td class="character-link">Yoshi</td>
-          </tr> -->
-<!-- >>>>>>> master -->
         </table>
         <div class="display-character"></div>
         <div id="start-game-outer">
@@ -56,15 +44,11 @@
         var ctx = canvasEl.getContext("2d");
         var game = new NinjaPop.Game(2, ctx);
         $(document).ready(function () {
-<<<<<<< HEAD
           $(".character-link").on("click",function (e) {
             debugger
             $(".character-link").removeClass("selected");
             $(e.currentTarget).addClass("selected");
           });
-
-=======
->>>>>>> master
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var gameView = new NinjaPop.GameView(game, ctx).start();

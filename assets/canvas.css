@@ -75,10 +75,11 @@
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
+
 .character-link selected {
   border: 8px solid black;
-=======
+}
+
 .ninja-black {
   padding: auto;
   width: auto;
@@ -87,7 +88,7 @@
 
 .character-link selected {
   border: 2px solid green;
->>>>>>> master
+
 }
 
 .character-link:hover {
