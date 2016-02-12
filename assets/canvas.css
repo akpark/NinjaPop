@@ -1,0 +1,159 @@
+#canvas-wrap {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#canvas-game {
+  z-index: 1;
+  position: absolute;
+  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background: url("images/sprites/background-beach.gif");
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+#welcome-screen {
+  position: relative;
+  border: 1px solid #ccc;
+  z-index: 2;
+  width: 700px;
+  height: 410px;
+  margin: auto auto;
+  opacity: 0.5;
+  background: white;
+  /*background-image: url("images/sprites/night-background.png")*/
+}
+
+#character-choice-text {
+  color: black;
+  margin-left: 75px;
+  margin-top: 85px;
+  font-size: 28px;
+  font-family: palatino;
+  /*background: white;*/
+}
+
+#start-game-outer {
+  font-size: 28px;
+  text-align: center;
+  font-family: arial;
+  margin-top: 110px;
+  color: black;
+  padding: 0;
+}
+
+#start-game {
+  display: inline;
+  border: 3px solid grey;
+  opacity: 1;
+  padding: 5px 10px;
+}
+
+#start-game:hover {
+  cursor: pointer;
+}
+
+#character-table {
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+.character-link {
+  border: 1px solid #ccc;
+  padding: auto;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+<<<<<<< HEAD
+.character-link selected {
+  border: 8px solid black;
+=======
+.ninja-black {
+  padding: auto;
+  width: auto;
+  height: auto;
+}
+
+.character-link selected {
+  border: 2px solid green;
+>>>>>>> master
+}
+
+.character-link:hover {
+  cursor: pointer;
+}
+
+.display-character {
+  position: absolute;
+  border: 1px solid black;
+  right: 80px;
+  top: 70px;
+  width: 200px;
+  height: 200px;
+}
+
+#center-message {
+  position: absolute;
+  border: 1px solid white;
+  width: 150px;
+  height: 30px;
+  display: none;
+  top: 70px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto auto;
+  z-index: 2;
+  opacity: 0.7;
+  font-size: 18px;
+  background: green;
+}
+
+#footer {
+  position: absolute;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  width: 700px;
+  height: 60px;
+  top: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#time-bar {
+  margin-top: 8px;
+  background: red;
+  height: 18px;
+  border: 1px solid #ccc;
+}
+
+.footer-bottom {
+  padding-top: 6px;
+}
+
+#name {
+  float: left;
+}
+
+#score {
+  float:right;
+}
