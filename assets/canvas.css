@@ -45,7 +45,7 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
-  border: 4px solid white;
+  border: 4px solid #e6e6e6;
   background: url("images/sprites/background-beach.gif");
 }
 
@@ -66,10 +66,10 @@ body {
 
 #character-choice-text {
   color: black;
-  margin-left: 75px;
-  margin-top: 85px;
+  margin-left: 90px;
+  margin-top: 95px;
   font-size: 28px;
-  font-family: palatino;
+  font-family: candara;
 }
 
 #start-game-outer {
@@ -83,31 +83,30 @@ body {
 
 #start-game {
   display: inline;
-  border: 3px solid grey;
-  opacity: 1;
   padding: 5px 10px;
+  font-family: rockwell;
 }
 
 #start-game:hover {
   cursor: pointer;
+  border: 3px solid grey;
 }
 
 #character-table {
-  margin-left: 140px;
-  margin-top: 40px;
+  margin-left: 108px;
+  margin-top: 35px;
 }
 
 .character-link {
-  border: 1px solid #ccc;
-  padding: auto;
+  border: 1px dotted black;
+  padding: 10px 10px 10px 20px;
   width: 45px;
   height: 45px;
   margin-right: 10px;
 }
 
-
 .character-link selected {
-  border: 8px solid black;
+  border: 3px solid black;
 }
 
 .ninja-black {
@@ -118,7 +117,6 @@ body {
 
 .character-link selected {
   border: 2px solid green;
-
 }
 
 .character-link:hover {
@@ -129,7 +127,7 @@ body {
   position: absolute;
   border: 1px solid black;
   right: 80px;
-  top: 70px;
+  top: 85px;
   width: 200px;
   height: 200px;
 }
