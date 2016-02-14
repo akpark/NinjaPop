@@ -32,6 +32,9 @@
       </div>
       <div id="center-message"></div>
     </div>
+    <div id="toggle-music-outer">
+      <div id="toggle-music">Toggle Music On/Off</div>
+    </div>
 
     <script type="application/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="application/javascript" src="lib/bubble.js"></script>
@@ -45,7 +48,6 @@
 
     <script type="application/javascript">
       (function () {
-        // $("#center-message").hide();
         var canvasEl = document.getElementsByTagName("canvas")[0];
         canvasEl.width = NinjaPop.Game.DIM_X;
         canvasEl.height = NinjaPop.Game.DIM_Y;
@@ -54,6 +56,10 @@
 
           var myAudio = new Audio('assets/sounds/loop.wav');
           myAudio.volume = 0.1;
+          myAudio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+          }, false);
           var introAudio = new Audio('assets/sounds/oriental-intro.mp3');
           introAudio.play();
 
@@ -75,18 +81,21 @@
             }
           });
 
+          $("#toggle-music").click(function () {
+            if (myAudio.paused) {
+              myAudio.play();
+            } else {
+              myAudio.pause();
+            }
+          });
+
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var ctx = canvasEl.getContext("2d");
-            var game = new NinjaPop.Game(1, ctx);
+            var game = new NinjaPop.Game(10, ctx);
             var kabuki = new Audio("assets/sounds/kabuki.wav");
             kabuki.play();
             new NinjaPop.GameView(game, ctx).start();
-
-            myAudio.addEventListener('ended', function() {
-                this.currentTime = 0;
-                this.play();
-            }, false);
             myAudio.play();
           });
         })

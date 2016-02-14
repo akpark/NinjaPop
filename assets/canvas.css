@@ -205,3 +205,15 @@ body {
 #score {
   float:right;
 }
+
+#toggle-music {
+  color: white;
+  text-align: center;
+  margin: auto auto;
+  margin-left: 550px;
+  margin-top: 445px;
+}
+
+#toggle-music:hover {
+  cursor: pointer;
+}
