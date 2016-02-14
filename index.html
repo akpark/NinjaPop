@@ -51,6 +51,15 @@
         canvasEl.height = NinjaPop.Game.DIM_Y;
 
         $(document).ready(function () {
+
+          // var myAudio = new Audio('assets/sounds/oriental.wav');
+          // myAudio.addEventListener('ended', function() {
+          //     this.currentTime = 0;
+          //     this.play();
+          // }, false);
+          // myAudio.play();
+
+
           $(".character-link").on("click", function (e) {
             $(".character-link").removeClass("selected");
             $(e.currentTarget).addClass("selected");
@@ -75,6 +84,8 @@
             $('#welcome-screen').hide();
             var ctx = canvasEl.getContext("2d");
             var game = new NinjaPop.Game(4, ctx);
+            var kabuki = new Audio("assets/sounds/kabuki.wav");
+            kabuki.play();
             new NinjaPop.GameView(game, ctx).start();
           });
         })

@@ -46,10 +46,9 @@ body {
   left: 0;
   right: 0;
   border: 4px solid #e6e6e6;
-  /*width: 700px;
-  height: 410px;*/
-  background-image: url("images/sprites/night-background.png");
-  background-size: 700px 380px;
+  /*opacity: 0.95;*/
+  background-image: url("images/sprites/dojo-background.jpg");
+  background-size: 700px 410px;
   background-repeat: no-repeat;
 }
 
@@ -64,16 +63,18 @@ body {
   width: 700px;
   height: 410px;
   margin: auto auto;
-  opacity: 0.8;
-  background: white;
+  /*opacity: 0.8;*/
+  background: url("images/ninja-background.jpg");
+  background-size: 800px 500px;
 }
 
 #character-choice-text {
-  color: black;
+  color: #cedbd9;
   margin-left: 90px;
   margin-top: 95px;
   font-size: 28px;
   font-family: candara;
+  font-weight: 800;
 }
 
 #start-game-outer {
@@ -81,7 +82,7 @@ body {
   text-align: center;
   font-family: arial;
   margin-top: 110px;
-  color: black;
+  color: #cedbd9;
   padding: 0;
 }
 
@@ -107,6 +108,8 @@ body {
   width: 45px;
   height: 45px;
   margin-right: 10px;
+  background: white;
+  opacity: 0.7;
 }
 
 .selected {
@@ -124,7 +127,8 @@ body {
   top: 85px;
   width: 200px;
   height: 200px;
-  background-color: #546684;
+  background-color: #cedbd9;
+  opacity: 0.7;
 }
 
 .display-character {
