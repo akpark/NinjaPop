@@ -52,12 +52,13 @@
 
         $(document).ready(function () {
 
-          // var myAudio = new Audio('assets/sounds/oriental.wav');
-          // myAudio.addEventListener('ended', function() {
-          //     this.currentTime = 0;
-          //     this.play();
-          // }, false);
-          // myAudio.play();
+          var myAudio = new Audio('assets/sounds/oriental.wav');
+          myAudio.volume = 0.3;
+          myAudio.addEventListener('ended', function() {
+              this.currentTime = 0;
+              this.play();
+          }, false);
+          myAudio.play();
 
 
           $(".character-link").on("click", function (e) {
@@ -76,8 +77,6 @@
                 $(".display-character").addClass("grey-ninja");
                 break;
             }
-            // $(".display-character").removeClass("selected-display");
-            // debugger
           });
 
           $("#start-game").click(function () {
