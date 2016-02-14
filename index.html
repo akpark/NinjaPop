@@ -37,6 +37,7 @@
     <script type="application/javascript" src="lib/bubble.js"></script>
     <script type="application/javascript" src="lib/attack.js"></script>
     <script type="application/javascript" src="lib/pop.js"></script>
+    <script type="application/javascript" src="lib/ceiling.js"></script>
     <script type="application/javascript" src="lib/footer.js"></script>
     <script type="application/javascript" src="lib/ninja.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
@@ -74,7 +75,7 @@
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var ctx = canvasEl.getContext("2d");
-            var game = new NinjaPop.Game(1, ctx);
+            var game = new NinjaPop.Game(4, ctx);
             new NinjaPop.GameView(game, ctx).start();
           });
         })
