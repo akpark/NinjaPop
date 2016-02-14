@@ -8,8 +8,9 @@
   <body>
     <div id="header">
       <h1>Ninja Pop<h1>
-      <h3>>> LEFT / RIGHT to dodge bubbles</h3>
-      <h3>>> SPACEBAR to shoot shurikens</h3>
+      <h3>Shoot the bubbles before the timer runs out!</h3>
+      <h3>> LEFT / RIGHT to dodge bubbles</h3>
+      <h3>> SPACEBAR to shoot shurikens</h3>
     </div>
     <div id="canvas-wrap">
       <canvas id="canvas-game"></canvas>
@@ -22,7 +23,9 @@
             <td class="character-link" value=2 ><img class="ninja-red" src="assets/images/sprites/ninja/ninja-grey-icon.png"/></td>
           </tr>
         </table>
-        <div class="display-character"></div>
+        <div class="display-character-outer">
+          <div class="display-character"></div>
+        </div>
         <div id="start-game-outer">
           <div id="start-game">Start!</div>
         </div>
@@ -47,9 +50,25 @@
         canvasEl.height = NinjaPop.Game.DIM_Y;
 
         $(document).ready(function () {
-          $(".character-link").on("click",function (e) {
+          $(".character-link").on("click", function (e) {
             $(".character-link").removeClass("selected");
             $(e.currentTarget).addClass("selected");
+            //change the display character
+            $(".display-character").attr("class", "display-character");
+            debugger
+            switch (parseInt($(e.currentTarget).attr("value"))) {
+              case 0:
+                $(".display-character").addClass("black-ninja");
+                break;
+              case 1:
+                $(".display-character").addClass("red-ninja");
+                break;
+              case 2:
+                $(".display-character").addClass("grey-ninja");
+                break;
+            }
+            // $(".display-character").removeClass("selected-display");
+            // debugger
           });
 
           $("#start-game").click(function () {

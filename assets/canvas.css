@@ -60,7 +60,7 @@ body {
   width: 700px;
   height: 410px;
   margin: auto auto;
-  opacity: 0.5;
+  opacity: 0.8;
   background: white;
 }
 
@@ -99,37 +99,50 @@ body {
 
 .character-link {
   border: 1px dotted black;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 25px;
   width: 45px;
   height: 45px;
   margin-right: 10px;
 }
 
-.character-link selected {
-  border: 3px solid black;
-}
-
-.ninja-black {
-  padding: auto;
-  width: auto;
-  height: auto;
-}
-
-.character-link selected {
-  border: 2px solid green;
+.selected {
+  border: 3px solid #546684;
 }
 
 .character-link:hover {
   cursor: pointer;
 }
 
-.display-character {
+.display-character-outer {
   position: absolute;
   border: 1px solid black;
   right: 80px;
   top: 85px;
   width: 200px;
   height: 200px;
+  background-color: #546684;
+}
+
+.display-character {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  /*background: url("images/sprites/ninja/black-ninja.gif");*/
+  background-repeat: no-repeat;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.black-ninja {
+  background: url("images/sprites/ninja/black-ninja.gif");
+}
+
+.red-ninja {
+  background: url("images/sprites/ninja/red-ninja.gif");
+}
+
+.grey-ninja {
+  background: url("images/sprites/ninja/grey-ninja.gif");
 }
 
 #center-message {
