@@ -52,14 +52,10 @@
 
         $(document).ready(function () {
 
-          var myAudio = new Audio('assets/sounds/oriental.wav');
-          myAudio.volume = 0.3;
-          myAudio.addEventListener('ended', function() {
-              this.currentTime = 0;
-              this.play();
-          }, false);
-          myAudio.play();
-
+          var myAudio = new Audio('assets/sounds/loop.wav');
+          myAudio.volume = 0.1;
+          var introAudio = new Audio('assets/sounds/oriental-intro.mp3');
+          introAudio.play();
 
           $(".character-link").on("click", function (e) {
             $(".character-link").removeClass("selected");
@@ -82,10 +78,16 @@
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var ctx = canvasEl.getContext("2d");
-            var game = new NinjaPop.Game(4, ctx);
+            var game = new NinjaPop.Game(1, ctx);
             var kabuki = new Audio("assets/sounds/kabuki.wav");
             kabuki.play();
             new NinjaPop.GameView(game, ctx).start();
+
+            myAudio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+            myAudio.play();
           });
         })
       })();
