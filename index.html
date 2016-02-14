@@ -92,7 +92,7 @@
           $("#start-game").click(function () {
             $('#welcome-screen').hide();
             var ctx = canvasEl.getContext("2d");
-            var game = new NinjaPop.Game(10, ctx);
+            var game = new NinjaPop.Game(1, ctx);
             var kabuki = new Audio("assets/sounds/kabuki.wav");
             kabuki.play();
             new NinjaPop.GameView(game, ctx).start();
