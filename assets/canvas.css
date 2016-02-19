@@ -68,17 +68,19 @@ body {
 
 #character-choice-text {
   color: #cedbd9;
-  margin-left: 90px;
-  margin-top: 95px;
-  font-size: 28px;
-  font-family: candara;
+  margin-left: 85px;
+  margin-top: 85px;
+  font-size: 36px;
+  font-family: 'Samurai';
+  text-transform: uppercase;
   font-weight: 800;
 }
 
 #start-game-outer {
   font-size: 28px;
   text-align: center;
-  font-family: arial;
+  font-family: 'Samurai';
+  text-transform: uppercase;
   margin-top: 110px;
   color: #cedbd9;
   padding: 0;
@@ -87,7 +89,7 @@ body {
 #start-game {
   display: inline;
   padding: 5px 10px;
-  font-family: rockwell;
+  font-family: 'Samurai';
 }
 
 #start-game:hover {
@@ -153,8 +155,10 @@ body {
 #center-message {
   position: absolute;
   border: 1px solid white;
-  width: 150px;
-  height: 30px;
+  width: 160px;
+  height: 33px;
+  border: 2px solid black;
+  border-radius: 3px;
   display: none;
   top: 70px;
   left: 0;
@@ -163,7 +167,7 @@ body {
   margin: auto auto;
   z-index: 2;
   opacity: 1;
-  font-size: 24px;
+  font-size: 26px;
   font-family: rockwell;
   background: #e6e6e6;
 }
@@ -203,7 +207,7 @@ body {
 }
 
 #score {
-  float:right;
+  float: right;
 }
 
 #toggle-music {
@@ -216,4 +220,29 @@ body {
 
 #toggle-music:hover {
   cursor: pointer;
+}
+
+.contact-links {
+  font-size: 28px;
+  color: white;
+  margin: auto auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.icon {
+  display: inline;
+  margin: 10px;
+  color: white;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icons > li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+  font-size: 20px;
 }
