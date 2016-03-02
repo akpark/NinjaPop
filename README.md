@@ -11,4 +11,4 @@ Only then, can you be true ninja master. Enjoy!
 
 ## Screenshots
 
-![Screenshot](/assets/images/screenshots/screenshot.png)
+![Screenshot](assets/images/screenshot.png)
