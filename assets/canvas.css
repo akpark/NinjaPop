@@ -172,6 +172,10 @@ body {
   background: #e6e6e6;
 }
 
+#center-message:hover {
+  cursor: pointer;
+}
+
 #footer {
   position: absolute;
   border-bottom: 1px solid black;
