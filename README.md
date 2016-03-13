@@ -11,4 +11,4 @@ Only then, can you be true ninja master. Enjoy!
 
 ## Screenshots
 
-[![Screenshot](assets/images/screenshot.png)](www.andrewpark.site/ninjapop)
+[![Screenshot](assets/images/screenshot.png)](http://www.andrewpark.site/ninjapop)
